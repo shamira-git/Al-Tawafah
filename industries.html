@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industries We Serve | Al Tawafah Facilities &amp; Manpower</title>
+  <meta name="description" content="Explore the 12 industries Al Tawafah serves, detailing safety guidelines, custom manpower supply, and facility support in hospital, manufacturing, and oil &amp; gas sectors.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <style>
+    .ind-card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .ind-img {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+    .ind-body {
+      padding: 30px;
+      border: 1px solid var(--border-color);
+      border-top: none;
+      border-radius: 0 0 var(--border-radius) var(--border-radius);
+      background-color: var(--bg-surface);
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .ind-title {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .ind-title i {
+      color: var(--secondary);
+    }
+    .ind-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+    }
+    .ind-compliance {
+      background-color: var(--bg-surface-alt);
+      padding: 12px 16px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      border-left: 3px solid var(--primary);
+      margin-bottom: 20px;
+    }
+    .ind-compliance span {
+      font-weight: 700;
+      color: var(--primary);
+      display: block;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-info">
+        <span><i data-lucide="clock" style="width:14px; height:14px; vertical-align:middle; margin-right:4px;"></i> Mon - Sat: 8:00 AM - 6:00 PM</span>
+        <a href="tel:+0553736370"><i data-lucide="phone" style="width:14px; height:14px; vertical-align:middle; margin-right:4px;"></i> 055 373 6370</a>
+        <a href="mailto:altawafah-technical@hotmail.com"><i data-lucide="mail" style="width:14px; height:14px; vertical-align:middle; margin-right:4px;"></i> altawafah-technical@hotmail.com</a>
+      </div>
+      <div class="top-socials">
+        <a href="#" aria-label="Facebook"><i data-lucide="facebook" style="width:16px; height:16px;"></i></a>
+        <a href="#" aria-label="Twitter"><i data-lucide="twitter" style="width:16px; height:16px;"></i></a>
+        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin" style="width:16px; height:16px;"></i></a>
+        <a href="#" aria-label="Instagram"><i data-lucide="instagram" style="width:16px; height:16px;"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo-wrapper">
+        <img src="assets/logo.svg" alt="Al Tawafah Logo" style="width:100%; height:100%;">
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="industries.html" class="nav-link active">Industries</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="careers.html" class="nav-link">Careers</a></li>
+          <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle Theme">
+          <i data-lucide="moon" class="moon-icon" style="width:20px; height:20px;"></i>
+          <i data-lucide="sun" class="sun-icon" style="width:20px; height:20px;"></i>
+        </button>
+        <a href="contact.html" class="btn btn-primary btn-sm btn-nav-cta">Get a Quote</a>
+        <button class="hamburger" aria-label="Toggle Mobile Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="drawer-overlay"></div>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li><a href="industries.html" class="mobile-nav-link active">Industries</a></li>
+      <li><a href="projects.html" class="mobile-nav-link">Projects</a></li>
+      <li><a href="careers.html" class="mobile-nav-link">Careers</a></li>
+      <li><a href="testimonials.html" class="mobile-nav-link">Testimonials</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
+    </ul>
+    <div class="mobile-nav-cta">
+      <a href="contact.html" class="btn btn-primary" style="display:block; text-align:center;">Get a Quote</a>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+      <h1 class="page-hero-title">Industries We Serve</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> / <span>Industries</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sector Showcase Section -->
+  <section class="section">
+    <div class="container">
+      
+      <div class="grid grid-3">
+        
+        <!-- 1. Manufacturing -->
+        <!-- <div class="ind-card animate-on-scroll animate-fade-in-up">
+          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" alt="Manufacturing" class="ind-img">
+          <div class="ind-body">
+            <div>
+              <h3 class="ind-title"><i data-lucide="factory"></i> Manufacturing</h3>
+              <p class="ind-desc">Industrial mechanical plant maintenance, assembly line helpers, shift operators, electrical systems servicing, and heavy shopfloor sweep downs.</p>
+              <div class="ind-compliance">
+                <span>Compliance Standards</span>
+                Strict OSHA hazard controls, Lock-Out/Tag-Out (LOTO) protocols, and daily safety briefs.
+              </div>
+            </div>
+            <a href="contact.html?industry=manufacturing" class="btn btn-outline btn-sm">Inquire Solutions</a>
+          </div>
+        </div> -->
+
+        <!-- 2. Construction -->
+        <div class="ind-card animate-on-scroll animate-fade-in-up" style="animation-delay: 0.1s;">
+          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=80" alt="Construction" class="ind-img">
+          <div class="ind-body">
+            <div>
+              <h3 class="ind-title"><i data-lucide="hammer"></i> Construction</h3>
+              <p class="ind-desc">Civil masonry assistance, certified structural welders, heavy lifters, safety watchers, material movers, and site cleanup helpers.</p>
+              <div class="ind-compliance">
+                <span>Compliance Standards</span>
+                Strict PPE protocol enforces (hard hats, harnesses, steel-toes) under active safety inspectors.
+              </div>
+            </div>
+            <a href="contact.html?industry=construction" class="btn btn-outline btn-sm">Inquire Solutions</a>
+          </div>
+        </div>
+
+        <!-- 3. Hospitals & Healthcare -->
+        <!-- <div class="ind-card animate-on-scroll animate-fade-in-up" style="animation-delay: 0.2s;">
+          <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=600&q=80" alt="Hospitals" class="ind-img">
+          <div class="ind-body">
+            <div>
+              <h3 class="ind-title"><i data-lucide="activity"></i> Hospitals</h3>
+              <p class="ind-desc">Sterile deep-cleaning runs, biological waste collection, non-clinical helper staff, HVAC ventilation filtering, and 24/7 power backup checks.</p>
+              <div class="ind-compliance">
+                <span>Compliance Standards</span>
+                EPA-approved chemical usage, disinfection logs, and clinical sanitation parameters.
+              </div>
+            </div>
+            <a href="contact.html?industry=hospitals" class="btn btn-outline btn-sm">Inquire Solutions</a>
+          </div>
+        </div> -->
+
+        <!-- 4. Hotels & Hospitality -->
+        <div class="ind-card animate-on-scroll animate-fade-in-up">
+          <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80" alt="Hotels" class="ind-img">
+          <div class="ind-body">
+            <div>
+              <h3 class="ind-title"><i data-lucide="hotel"></i> Hotels</h3>
+              <p class="ind-desc">Pantry cleaning support, guest lobbies upkeep, landscaping services, AMC plumbing audits, and premium gatekeeper security teams.</p>
+              <div class="ind-compliance">
+                <span>Compliance Standards</span>
+                Guest service grooming benchmarks and high-speed response timers for in-room failures.
+              </div>
+            </div>
+            <a href="contact.html?industry=hotels" class="btn btn-outline btn-sm">Inquire Solutions</a>
+          </div>
+        </div>
+
+        <!-- 5. Shopping Malls & Retail -->
+        <div class="ind-card animate-on-scroll animate-fade-in-up" style="animation-delay: 0.1s;">
+          <img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&w=600&q=80" alt="Shopping Malls" class="ind-img">
+          <div class="ind-body">
+            <div>
+              <h3 class="ind-title"><i data-lucide="shopping-bag"></i> Shopping Malls</h3>
+              <p class="ind-desc">Escalator inspection runs, public lobby washroom cleaning, facade window cleaning, parking lot management, and CCTV surveillance teams.</p>
+              <div class="ind-compliance">
+                <span>Compliance Standards</span>
+                Public hazard protections (wet-floor alerts, cordoned zones) and immediate emergency action.
+              </div>
+            </div>
+            <a href="contact.html?industry=shopping-malls" class="btn btn-outline btn-sm">Inquire Solutions</a>
+          </div>
+        </div>
+
+        <!-- 6. Residential Buildings -->
+        <div class="ind-card animate-on-scroll animate-fade-in-up" style="animation-delay: 0.2s;">
+          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80" alt="Residential Buildings" class="ind-img">
+          <div class="ind-body">
+            <div>
+              <h3 class="ind-title"><i data-lucide="home"></i> Residential Buildings</h3>
+              <p class="ind-desc">Apartment community MEP servicing, water tank cleanouts, gardening staff, community entry gateguards, and AMC plumbing schedules.</p>
+              <div class="ind-compliance">
+                <span>Compliance Standards</span>
+                100% police verification for security staff and background check logs for technician entry.
+              </div>
+            </div>
+            <a href="contact.html?industry=residential" class="btn btn-outline btn-sm">Inquire Solutions</a>
+          </div>
+        </div>
+
+        <!-- 7. Commercial Offices -->
+        <div class="ind-card animate-on-scroll animate-fade-in-up">
+          <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=600&q=80" alt="Commercial Offices" class="ind-img">
+          <div class="ind-body">
+            <div>
+              <h3 class="ind-title"><i data-lucide="briefcase"></i> Commercial Offices</h3>
+              <p class="ind-desc">Daily office boy pantries operations, vacuuming runs, server room cooling audits, office desk layout cleaning, and front desk visitor loggers.</p>
+              <div class="ind-compliance">
+                <span>Compliance Standards</span>
+                Silent operational hours (night cleanouts) and strict information security (clean desk norms).
+              </div>
+            </div>
+            <a href="contact.html?industry=offices" class="btn btn-outline btn-sm">Inquire Solutions</a>
+          </div>
+        </div>
+
+   
+
+        <!-- 9. Educational Institutions -->
+        <div class="ind-card animate-on-scroll animate-fade-in-up" style="animation-delay: 0.2s;">
+          <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=600&q=80" alt="Educational Institutions" class="ind-img">
+          <div class="ind-body">
+            <div>
+              <h3 class="ind-title"><i data-lucide="graduation-cap"></i> Educational Institutions</h3>
+              <p class="ind-desc">School classroom cleaning runs, sports field turf maintenance, school bus safety supervisors, building lighting repairs, and campus guards.</p>
+              <div class="ind-compliance">
+                <span>Compliance Standards</span>
+                Vigorously background-checked cleaners and zero-tolerance drug/alcohol verification loops.
+              </div>
+            </div>
+            <a href="contact.html?industry=education" class="btn btn-outline btn-sm">Inquire Solutions</a>
+          </div>
+        </div>
+
+        <!-- 5. Hospitals & Healthcare -->
+        
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Logo & Desc -->
+        <div>
+          <div class="footer-logo">
+            <img src="assets/logo.svg" alt="Al Tawafah Logo" style="filter: brightness(0) invert(1); width:100%; height:100%;">
+          </div>
+          <p class="footer-desc">
+            Al Tawafah is a leading provider of premium maintenance, facility management, and professional manpower solutions. We empower residential, commercial, and industrial clients with skilled support.
+          </p>
+          <div class="top-socials" style="gap: 15px;">
+            <a href="#" aria-label="Facebook"><i data-lucide="facebook" style="width:18px; height:18px;"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter" style="width:18px; height:18px;"></i></a>
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin" style="width:18px; height:18px;"></i></a>
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram" style="width:18px; height:18px;"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="projects.html">Projects Portfolio</a></li>
+            <li><a href="careers.html">Join Our Team</a></li>
+            <li><a href="testimonials.html">Client Reviews</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div>
+          <h3 class="footer-title">Our Services</h3>
+          <ul class="footer-links">
+            <li><a href="services.html">Facility Management</a></li>
+            <li><a href="services.html">Skilled Manpower Supply</a></li>
+            <li><a href="services.html">Electrical &amp; Mechanical</a></li>
+            <li><a href="services.html">Cleaning &amp; Housekeeping</a></li>
+            <li><a href="services.html">Annual Maintenance (AMC)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div>
+          <h3 class="footer-title">Contact Info</h3>
+          <div class="footer-contact-item">
+            <i data-lucide="map-pin" style="width:18px; height:18px;"></i>
+            <span>Aspin Commercial, Dubai - UAE</span>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="phone" style="width:18px; height:18px;"></i>
+            <a href="tel:+0553736370">055 373 6370</a>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="mail" style="width:18px; height:18px;"></i>
+            <a href="mailto:altawafah-technical@hotmail.com">altawafah-technical@hotmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Al Tawafah Facilities &amp; Manpower. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <a href="https://wa.me/0553736370" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i data-lucide="message-square" style="width:24px; height:24px;"></i>
+  </a>
+  <a href="#" class="back-to-top" aria-label="Back to Top">
+    <i data-lucide="arrow-up" style="width:24px; height:24px;"></i>
+  </a>
+
+  <!-- JavaScript CDN dependencies -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

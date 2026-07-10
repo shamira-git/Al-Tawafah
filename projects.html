@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects Portfolio | Al Tawafah Facilities &amp; Manpower</title>
+  <meta name="description" content="Browse completed facility management, commercial mechanical upgrades, and staffing projects delivered on schedule by Al Tawafah.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <style>
+    /* Subtle custom transitions for filterable items */
+    .project-card {
+      transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-info">
+        <span><i data-lucide="clock" style="width:14px; height:14px; vertical-align:middle; margin-right:4px;"></i> Mon - Sat: 8:00 AM - 6:00 PM</span>
+        <a href="tel:+0553736370"><i data-lucide="phone" style="width:14px; height:14px; vertical-align:middle; margin-right:4px;"></i> 055 373 6370</a>
+        <a href="mailto:altawafah-technical@hotmail.com"><i data-lucide="mail" style="width:14px; height:14px; vertical-align:middle; margin-right:4px;"></i> altawafah-technical@hotmail.com</a>
+      </div>
+      <div class="top-socials">
+        <a href="#" aria-label="Facebook"><i data-lucide="facebook" style="width:16px; height:16px;"></i></a>
+        <a href="#" aria-label="Twitter"><i data-lucide="twitter" style="width:16px; height:16px;"></i></a>
+        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin" style="width:16px; height:16px;"></i></a>
+        <a href="#" aria-label="Instagram"><i data-lucide="instagram" style="width:16px; height:16px;"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo-wrapper">
+        <img src="assets/logo.svg" alt="Al Tawafah Logo" style="width:100%; height:100%;">
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="industries.html" class="nav-link">Industries</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="careers.html" class="nav-link">Careers</a></li>
+          <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle Theme">
+          <i data-lucide="moon" class="moon-icon" style="width:20px; height:20px;"></i>
+          <i data-lucide="sun" class="sun-icon" style="width:20px; height:20px;"></i>
+        </button>
+        <a href="contact.html" class="btn btn-primary btn-sm btn-nav-cta">Get a Quote</a>
+        <button class="hamburger" aria-label="Toggle Mobile Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="drawer-overlay"></div>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li><a href="industries.html" class="mobile-nav-link">Industries</a></li>
+      <li><a href="projects.html" class="mobile-nav-link active">Projects</a></li>
+      <li><a href="careers.html" class="mobile-nav-link">Careers</a></li>
+      <li><a href="testimonials.html" class="mobile-nav-link">Testimonials</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
+    </ul>
+    <div class="mobile-nav-cta">
+      <a href="contact.html" class="btn btn-primary" style="display:block; text-align:center;">Get a Quote</a>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+      <h1 class="page-hero-title">Completed Projects</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> / <span>Projects</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Gallery Section -->
+  <section class="section">
+    <div class="container">
+      
+      <!-- Gallery Filter Tabs -->
+      <div class="gallery-filters animate-on-scroll animate-fade-in-up">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="ac">AC Work</button>
+        <button class="filter-btn" data-filter="electrical">Electrical Work</button>
+        <button class="filter-btn" data-filter="ceiling">False Ceiling &amp; Gypsum</button>
+        <button class="filter-btn" data-filter="civil">Civil &amp; Plaster</button>
+        <button class="filter-btn" data-filter="paint">Paint Work</button>
+        <button class="filter-btn" data-filter="plumbing">Plumbing &amp; Sanitary</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid animate-on-scroll animate-fade-in-up">
+        
+        <!-- Project 1: AC Work -->
+        <div class="project-card" data-category="ac">
+          <div class="project-img-wrapper">
+            <span class="project-category">AC Work</span>
+            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80" alt="Commercial AC Servicing">
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span><i data-lucide="user" style="width:12px; height:12px;"></i> Residential Complex</span>
+              <span><i data-lucide="calendar" style="width:12px; height:12px;"></i> June 2026</span>
+            </div>
+            <h3 class="project-card-title">Commercial Chiller Servicing</h3>
+            <p class="project-desc">Complete diagnostic cleanup, motor checking, and annual maintenance overhaul of building multi-split AC units.</p>
+            <div class="project-location">
+              <i data-lucide="map-pin"></i> Dubai, UAE
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Electrical Work -->
+        <div class="project-card" data-category="electrical">
+          <div class="project-img-wrapper">
+            <span class="project-category">Electrical Work</span>
+            <img src="https://images.unsplash.com/photo-1621905252507-b354bc25edac?auto=format&fit=crop&w=600&q=80" alt="Main DB Dressing & Diagnostics">
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span><i data-lucide="user" style="width:12px; height:12px;"></i> Corporate Office setup</span>
+              <span><i data-lucide="calendar" style="width:12px; height:12px;"></i> May 2026</span>
+            </div>
+            <h3 class="project-card-title">Main DB Panel Dressing</h3>
+            <p class="project-desc">Complete wiring re-routing, DB dressing, thermal safety diagnostics, and breaker installation for a new corporate workspace.</p>
+            <div class="project-location">
+              <i data-lucide="map-pin"></i> Dubai, UAE
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: False Ceiling -->
+        <div class="project-card" data-category="ceiling">
+          <div class="project-img-wrapper">
+            <span class="project-category">False Ceiling &amp; Gypsum</span>
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Suspended Gypsum Ceiling Installation">
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span><i data-lucide="user" style="width:12px; height:12px;"></i> Retail Showroom</span>
+              <span><i data-lucide="calendar" style="width:12px; height:12px;"></i> April 2026</span>
+            </div>
+            <h3 class="project-card-title">Gypsum Ceiling &amp; Light Fixtures</h3>
+            <p class="project-desc">Complete design layout execution of suspended false ceilings integrated with decorative LED lighting tracks.</p>
+            <div class="project-location">
+              <i data-lucide="map-pin"></i> Sharjah, UAE
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Civil & Plaster -->
+        <div class="project-card" data-category="civil">
+          <div class="project-img-wrapper">
+            <span class="project-category">Civil &amp; Plaster</span>
+            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=80" alt="Drywall plastering work">
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span><i data-lucide="user" style="width:12px; height:12px;"></i> Commercial Building</span>
+              <span><i data-lucide="calendar" style="width:12px; height:12px;"></i> March 2026</span>
+            </div>
+            <h3 class="project-card-title">Office Partition Plastering</h3>
+            <p class="project-desc">Internal partition walls plastering, cement screeding, structural repair, and wall preparation for painting.</p>
+            <div class="project-location">
+              <i data-lucide="map-pin"></i> Dubai, UAE
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Paint Work -->
+        <div class="project-card" data-category="paint">
+          <div class="project-img-wrapper">
+            <span class="project-category">Paint Work</span>
+            <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=600&q=80" alt="Villa Wall Painting">
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span><i data-lucide="user" style="width:12px; height:12px;"></i> Luxury Villa</span>
+              <span><i data-lucide="calendar" style="width:12px; height:12px;"></i> February 2026</span>
+            </div>
+            <h3 class="project-card-title">Interior Decorative Painting</h3>
+            <p class="project-desc">High-quality wall paint coating, texturing, and custom decorative finishes according to villa specifications.</p>
+            <div class="project-location">
+              <i data-lucide="map-pin"></i> Dubai, UAE
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Plumbing & Sanitary -->
+        <div class="project-card" data-category="plumbing">
+          <div class="project-img-wrapper">
+            <span class="project-category">Plumbing &amp; Sanitary</span>
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Sanitary Fixtures Setup">
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span><i data-lucide="user" style="width:12px; height:12px;"></i> Luxury Apartment Complex</span>
+              <span><i data-lucide="calendar" style="width:12px; height:12px;"></i> July 2026</span>
+            </div>
+            <h3 class="project-card-title">Bathroom Piping &amp; Fixtures Setup</h3>
+            <p class="project-desc">Complete installation of bathroom piping system, kitchen fixtures, water pump updates, and toilet vanity assembly.</p>
+            <div class="project-location">
+              <i data-lucide="map-pin"></i> Dubai, UAE
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Logo & Desc -->
+        <div>
+          <div class="footer-logo">
+            <img src="assets/logo.svg" alt="Al Tawafah Logo" style="filter: brightness(0) invert(1); width:100%; height:100%;">
+          </div>
+          <p class="footer-desc">
+            Al Tawafah is a leading provider of premium maintenance, facility management, and professional manpower solutions. We empower residential, commercial, and industrial clients with skilled support.
+          </p>
+          <div class="top-socials" style="gap: 15px;">
+            <a href="#" aria-label="Facebook"><i data-lucide="facebook" style="width:18px; height:18px;"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter" style="width:18px; height:18px;"></i></a>
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin" style="width:18px; height:18px;"></i></a>
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram" style="width:18px; height:18px;"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="projects.html">Projects Portfolio</a></li>
+            <li><a href="careers.html">Join Our Team</a></li>
+            <li><a href="testimonials.html">Client Reviews</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div>
+          <h3 class="footer-title">Our Services</h3>
+          <ul class="footer-links">
+            <li><a href="services.html">Facility Management</a></li>
+            <li><a href="services.html">Skilled Manpower Supply</a></li>
+            <li><a href="services.html">Electrical &amp; Mechanical</a></li>
+            <li><a href="services.html">Cleaning &amp; Housekeeping</a></li>
+            <li><a href="services.html">Annual Maintenance (AMC)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div>
+          <h3 class="footer-title">Contact Info</h3>
+          <div class="footer-contact-item">
+            <i data-lucide="map-pin" style="width:18px; height:18px;"></i>
+            <span>Aspin Commercial, Dubai - UAE</span>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="phone" style="width:18px; height:18px;"></i>
+            <a href="tel:+0553736370">055 373 6370</a>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="mail" style="width:18px; height:18px;"></i>
+            <a href="mailto:altawafah-technical@hotmail.com">altawafah-technical@hotmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Al Tawafah Facilities &amp; Manpower. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <a href="https://wa.me/0553736370" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i data-lucide="message-square" style="width:24px; height:24px;"></i>
+  </a>
+  <a href="#" class="back-to-top" aria-label="Back to Top">
+    <i data-lucide="arrow-up" style="width:24px; height:24px;"></i>
+  </a>
+
+  <!-- JavaScript CDN dependencies -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
