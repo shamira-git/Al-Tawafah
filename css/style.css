@@ -259,18 +259,18 @@ body.dark-theme .btn-dark:hover {
   font-size: 0.85rem;
 }
 
-/* Lime (accent) Button - Brikly CTA style */
+/* Primary CTA Button (was lime, now brand blue) */
 .btn-lime {
-  background-color: #ADFF2F;
-  color: #111827;
+  background-color: var(--primary);
+  color: #FFFFFF;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
 
 .btn-lime:hover {
-  background-color: #9AE620;
+  background-color: var(--primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(173, 255, 47, 0.35);
+  box-shadow: 0 6px 20px rgba(15, 82, 186, 0.35);
 }
 
 /* Ghost Button (dark translucent outline) */
@@ -389,11 +389,11 @@ body.dark-theme .badge {
 
 .header:not(.scrolled) .nav-link:hover,
 .header:not(.scrolled) .nav-link.active {
-  color: #ADFF2F;
+  color: #FFFFFF;
 }
 
 .header:not(.scrolled) .nav-link::after {
-  background-color: #ADFF2F;
+  background-color: var(--primary-light);
 }
 
 .header:not(.scrolled) .hamburger span {
@@ -417,6 +417,15 @@ body.dark-theme .badge {
   align-items: center;
   height: 50px;
   width: 220px;
+}
+
+.logo-wrapper img {
+  max-height: 48px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .nav {
@@ -591,12 +600,14 @@ body.dark-theme .theme-toggle .sun-icon {
   z-index: 1040;
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
   transition: var(--transition);
 }
 
 .drawer-overlay.active {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
 }
 
 @media (min-width: 992px) {
@@ -695,8 +706,8 @@ body.dark-theme .theme-toggle .sun-icon {
 }
 
 @keyframes badgePulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(173, 255, 47, 0.15); }
-  50% { box-shadow: 0 0 0 8px rgba(173, 255, 47, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(15, 82, 186, 0.25); }
+  50% { box-shadow: 0 0 0 8px rgba(15, 82, 186, 0); }
 }
 
 .hero-title {
@@ -714,7 +725,7 @@ body.dark-theme .theme-toggle .sun-icon {
 }
 
 .hero-title span {
-  color: #ADFF2F;
+  color: var(--primary-light);
 }
 
 .hero-desc {
@@ -925,6 +936,7 @@ body.dark-theme .service-icon {
   height: 100%;
   background: linear-gradient(to top, rgba(17, 24, 37, 0.9) 0%, rgba(17, 24, 37, 0.3) 70%, rgba(17, 24, 37, 0.1) 100%);
   z-index: 1;
+  pointer-events: none;
   transition: var(--transition);
 }
 
@@ -1036,6 +1048,7 @@ body.dark-theme .service-icon {
 .process-step {
   text-align: center;
   position: relative;
+  z-index: 2;
 }
 
 .step-number {
@@ -1812,14 +1825,17 @@ body.dark-theme .submit-success {
   height: 50px;
   width: 200px;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 
-.footer-logo svg text {
-  fill: #FFFFFF !important;
-}
-
-.footer-logo svg g path:nth-child(2) {
-  fill: #FFFFFF !important;
+.footer-logo img {
+  max-height: 48px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .footer-desc {
@@ -1911,8 +1927,8 @@ body.dark-theme .submit-success {
    ========================================== */
 .back-to-top {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 100px;
+  right: 28px;
   width: 46px;
   height: 46px;
   border-radius: 50%;
@@ -1922,15 +1938,17 @@ body.dark-theme .submit-success {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 999;
+  z-index: 9980;
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
   transition: var(--transition);
 }
 
 .back-to-top.active {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
 }
 
 .back-to-top:hover {
@@ -2096,6 +2114,7 @@ body.dark-theme .header {
   width: 0;
   height: 4px;
   background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+  pointer-events: none;
   transition: var(--transition);
 }
 
@@ -2215,6 +2234,11 @@ body.dark-theme .section-bg {
   flex-direction: column;
   align-items: flex-end;
   gap: 12px;
+  pointer-events: none;
+}
+
+.wa-widget > * {
+  pointer-events: auto;
 }
 
 /* ---- Floating Action Button ---- */
@@ -2367,8 +2391,8 @@ body.dark-theme .wa-popup {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #ADFF2F;
-  box-shadow: 0 0 6px #ADFF2F;
+  background: #4ade80;
+  box-shadow: 0 0 6px #4ade80;
   animation: statusBlink 2s ease infinite;
 }
 

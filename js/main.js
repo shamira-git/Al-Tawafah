@@ -1,3 +1,6 @@
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
   // Pre-render social/brand icons to avoid Lucide core warnings
   const brandIcons = {
@@ -420,6 +423,16 @@ document.addEventListener('DOMContentLoaded', () => {
   if (waClose) {
     waClose.addEventListener('click', closeWaPopup);
   }
+
+  // Close WhatsApp popup when clicking outside the widget
+  document.addEventListener('click', (e) => {
+    if (waPopup && waPopup.classList.contains('is-open')) {
+      const waWidget = document.getElementById('waWidget');
+      if (waWidget && !waWidget.contains(e.target)) {
+        closeWaPopup();
+      }
+    }
+  });
 
   // Auto-open popup after 4 seconds to draw attention (once per session)
   if (waFab && !sessionStorage.getItem('waAutoShown')) {
