@@ -72,6 +72,9 @@ body {
   line-height: 1.6;
   transition: background-color 0.3s, color 0.3s;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -122,6 +125,7 @@ ul {
 
 .section {
   padding: 80px 0;
+  overflow: hidden;
 }
 
 .section-bg {
@@ -382,27 +386,27 @@ body.dark-theme .badge {
   height: 70px;
 }
 
-/* When header is transparent (over hero), make nav links white */
+/* When header is transparent (over hero), make nav links black */
 .header:not(.scrolled) .nav-link {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0, 0.85);
 }
 
 .header:not(.scrolled) .nav-link:hover,
 .header:not(.scrolled) .nav-link.active {
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .header:not(.scrolled) .nav-link::after {
-  background-color: var(--primary-light);
+  background-color: var(--primary);
 }
 
 .header:not(.scrolled) .hamburger span {
-  background-color: #FFFFFF;
+  background-color: #000000;
 }
 
 .header:not(.scrolled) .theme-toggle {
-  background-color: rgba(255,255,255,0.1);
-  color: #FFFFFF;
+  background-color: rgba(0,0,0,0.06);
+  color: #000000;
 }
 
 .header-container {
@@ -1812,6 +1816,7 @@ body.dark-theme .submit-success {
   color: #9CA3AF;
   padding: 80px 0 30px 0;
   border-top: 5px solid var(--primary);
+  margin-top: auto;
 }
 
 .footer-grid {
@@ -2051,6 +2056,22 @@ body.dark-theme .submit-success {
 }
 body.dark-theme .header {
   background: rgba(11, 15, 25, 0.8) !important;
+}
+
+/* Dark mode: restore white nav links */
+body.dark-theme .header:not(.scrolled) .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+}
+body.dark-theme .header:not(.scrolled) .nav-link:hover,
+body.dark-theme .header:not(.scrolled) .nav-link.active {
+  color: #FFFFFF;
+}
+body.dark-theme .header:not(.scrolled) .hamburger span {
+  background-color: #FFFFFF;
+}
+body.dark-theme .header:not(.scrolled) .theme-toggle {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
 }
 
 /* 2. Headline Text Gradients */
